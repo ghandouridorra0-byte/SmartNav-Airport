@@ -125,8 +125,23 @@ python -m http.server 5500
 Dashboard URL: http://localhost:5500
 
 ### 7. Run the ESP32 simulation
+## 🖥️ ESP32 Simulation – Wokwi
 
-Open the Wokwi project, start the ESP32 simulation and verify that MQTT measurements are being published.
+The ESP32 firmware is tested using the Wokwi online simulator.
+
+The simulation reproduces:
+
+- ESP32 Wi-Fi connection
+- MQTT broker connection
+- RSSI measurement generation for three virtual anchors
+- Passenger movement simulation
+- Real-time MQTT data publishing
+
+### Simulation Preview
+
+**Wokwi Project:** [https://wokwi.com/projects/481761238589412353](https://wokwi.com/projects/481761238589412353)
+
+**Note:** RSSI values and passenger positions are simulated for demonstration purposes.
 
 ## 📁 Project Structure
 
