@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartNav Airport Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div>
+        <h1>SmartNav Airport</h1>
+        <p>Indoor Navigation & Passenger Tracking</p>
+    </div>
+
+    <div class="status">
+        <span class="dot"></span>
+        SYSTEM ONLINE
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="stats">
+
+        <div class="card">
+            <p>CONNECTED PASSENGERS</p>
+            <h2 id="passengerCount">0</h2>
+        </div>
+
+        <div class="card">
+            <p>ACTIVE ANCHORS</p>
+            <h2 id="anchorCount">3</h2>
+        </div>
+
+        <div class="card">
+            <p>MQTT STATUS</p>
+            <h2 class="online">CONNECTED</h2>
+        </div>
+
+        <div class="card">
+            <p>POSITIONING</p>
+            <h2>ACTIVE</h2>
+        </div>
+
+    </section>
+
+    <section class="map-section">
+
+        <div class="section-title">
+            <h2>Airport Indoor Map</h2>
+            <span>LIVE TRACKING</span>
+        </div>
+
+        <div class="airport-map">
+
+            <div class="zone gate">
+                <h3>GATE A</h3>
+                <p>Boarding Area</p>
+            </div>
+
+            <div class="zone terminal">
+                <h3>TERMINAL</h3>
+                <p>Main Hall</p>
+            </div>
+
+            <div class="zone security">
+                <h3>SECURITY</h3>
+                <p>Control Area</p>
+            </div>
+
+            <div class="zone shops">
+                <h3>SHOPS</h3>
+                <p>Commercial Area</p>
+            </div>
+
+            <div class="anchor" id="anchor01">
+                A1
+            </div>
+
+            <div class="anchor" id="anchor02">
+                A2
+            </div>
+
+            <div class="anchor" id="anchor03">
+                A3
+            </div>
+
+            <div class="passenger" id="passenger">
+                <span>●</span>
+                <label>USER 01</label>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="details">
+
+        <div class="card">
+            <h3>Passenger Information</h3>
+            <p>User ID: <strong id="userId">--</strong></p>
+            <p>Position X: <strong id="positionX">--</strong></p>
+            <p>Position Y: <strong id="positionY">--</strong></p>
+            <p>Nearest Anchor: <strong id="nearestAnchor">--</strong></p>
+            <p>Method: <strong id="method">--</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>System Information</h3>
+            <p>Connection: <strong id="connection">Connecting...</strong></p>
+            <p>Last update: <strong id="lastUpdate">--</strong></p>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
